@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 
 public class Question2
 {
-  private static DecimalFormat df2 = new DecimalFormat("#.##");
+  public static DecimalFormat dp2 = new DecimalFormat("#.##");
   public static void main(String[] args)
   {     
     System.out.print("height in meters: ");  
@@ -15,7 +15,7 @@ public class Question2
     double weight = w.nextDouble();
     
     double bmi = weight/(height*height);
-    String s = "Your Body Mass Index is " + df2.format(bmi);
+    String s = "Your Body Mass Index is " + dp2.format(bmi);
     System.out.println(s);      
   }
 }
