@@ -1,16 +1,21 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Question2
 {
+  private static DecimalFormat df2 = new DecimalFormat("#.##");
   public static void main(String[] args)
-  {
-    /**
-     * Prompts user for height and weight, calculate and print out the BMI of the user
-     * 
-     * Hint: in.nextDouble() to read double
-     */
-     
-    Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
+  {     
+    System.out.print("height in meters: ");  
+    Scanner h = new Scanner(System.in);
+    double height = h.nextDouble();
+    
+    System.out.print("Enter weight in kilograms: ");  
+    Scanner w = new Scanner(System.in);
+    double weight = w.nextDouble();
+    
+    double bmi = weight/(height*height);
+    String s = "Your Body Mass Index is " + df2.format(bmi);
+    System.out.println(s);      
   }
 }
