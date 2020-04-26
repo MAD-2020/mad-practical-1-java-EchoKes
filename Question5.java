@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-public class Main
+public class Question5
 {
   public static void main(String[] args)
   {
